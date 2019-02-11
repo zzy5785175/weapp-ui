@@ -1,0 +1,5 @@
+<view
+    class="ui-col {{ span ? 'ui-col-span-' + span : '' }} {{ offset ? 'ui-col-offset-' + offset : '' }} custom-class"
+    style="{{ style }}">
+    <slot />
+</view>

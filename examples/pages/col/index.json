@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "ui-row": "../../dist/row",
+        "ui-col": "../../dist/col"
+    }
+}

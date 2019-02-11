@@ -1,0 +1,6 @@
+<view class="ui-loading">
+    <view style="width:100%;height:100%" class="ui-loading-ripple">
+        <view></view>
+        <view></view>
+    </view>
+</view>

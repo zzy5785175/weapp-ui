@@ -1,0 +1,36 @@
+$--color-success: #67c23a !default;
+$--color-warning: #e6a23c !default;
+$--color-danger: #f56c6c !default;
+$--color-info: #909399 !default;
+
+$--color-white: #fff !default;
+$--color-black: #282828 !default;
+$--color-text-placeholder: #c0c4cc !default;
+
+$--border-color-base: #dcdfe6 !default;
+
+$--button-active-shade-percent: 10% !default;
+
+$--button-font-size: 14px !default;
+$--button-border-radius: 4px !default;
+$--button-padding-horizontal: 20px !default;
+
+$--button-default-color: $--color-black !default;
+$--button-default-fill: $--color-white !default;
+$--button-default-border: $--border-color-base !default;
+
+$--button-success-color: $--color-white !default;
+$--button-success-fill: $--color-success !default;
+$--button-success-border: $--color-success !default;
+
+$--button-info-color: $--color-white !default;
+$--button-info-fill: $--color-info !default;
+$--button-info-border: $--color-info !default;
+
+$--button-warning-color: $--color-white !default;
+$--button-warning-fill: $--color-warning !default;
+$--button-warning-border: $--color-warning !default;
+
+$--button-danger-color: $--color-white !default;
+$--button-danger-fill: $--color-danger !default;
+$--button-danger-border: $--color-danger !default;

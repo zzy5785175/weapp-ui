@@ -1,0 +1,21 @@
+<demo-block title="基础用法">
+    <ui-button custom-class="btn">默认按钮</ui-button>
+    <ui-button custom-class="btn" type="success">成功按钮</ui-button>
+    <ui-button custom-class="btn" type="info">信息按钮</ui-button>
+    <ui-button custom-class="btn" type="warning">警告按钮</ui-button>
+    <ui-button custom-class="btn" type="danger">危险</ui-button>
+    <ui-button custom-class="btn" type="success" loading="{{true}}">加载中</ui-button>
+</demo-block>
+
+<demo-block title="圆角按钮">
+    <ui-button custom-class="btn" round>默认按钮</ui-button>
+    <ui-button custom-class="btn" type="success" round>成功按钮</ui-button>
+</demo-block>
+
+<demo-block title="禁用按钮">
+    <ui-button custom-class="btn" disabled>默认按钮</ui-button>
+    <ui-button custom-class="btn" type="success" disabled>成功按钮</ui-button>
+    <ui-button custom-class="btn" type="info" disabled>信息按钮</ui-button>
+    <ui-button custom-class="btn" type="warning" disabled>警告按钮</ui-button>
+    <ui-button type="danger" disabled>危险</ui-button>
+</demo-block>

@@ -1,0 +1,13 @@
+.demo-block {
+    padding: 15px;
+    /* margin-bottom: 20px; */
+}
+
+.demo-block__title {
+    margin-bottom: 15px;
+    color: #99a9bf;
+    font-size: 14px;
+}
+
+.demo-block__content {
+}

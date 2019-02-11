@@ -1,0 +1,5 @@
+<view
+    class="ui-row {{ type ? 'is-' + type : '' }} {{ justify ? 'is-justify-' + justify : '' }} {{ align ? 'is-align-' + align : '' }}"
+    style="{{ style }}">
+    <slot />
+</view>

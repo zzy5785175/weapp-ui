@@ -1,0 +1,40 @@
+@import '../theme-chalk/common/_button.scss';
+@import '../theme-chalk/common/_var.scss';
+.ui-button {
+    position: relative;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 $--button-padding-horizontal;
+    font-size: $--button-font-size;
+    border-radius: $--button-border-radius;
+    border: 1rpx solid $--border-color-base;
+    -webkit-appearance: none;
+    &::after {
+        content: none;
+    }
+    &--inline {
+        display: inline-block;
+    }
+    &--default {
+        @include button-variant($--button-default-color, $--button-default-fill, $--button-default-border);
+    }
+    &--success {
+        @include button-variant($--button-success-color, $--button-success-fill, $--button-success-border);
+    }
+    &--info {
+        @include button-variant($--button-info-color, $--button-info-fill, $--button-info-border);
+    }
+    &--danger {
+        @include button-variant($--button-danger-color, $--button-danger-fill, $--button-danger-border);
+    }
+    &--warning {
+        @include button-variant($--button-warning-color, $--button-warning-fill, $--button-warning-border);
+    }
+    &.is-round {
+        border-radius: 20px;
+    }
+    &-loading {
+        margin-right: 5px;
+    }
+}

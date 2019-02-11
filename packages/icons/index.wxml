@@ -1,0 +1,2 @@
+<view class="ui-icon custom-class {{ className ? className : '' }}">
+</view>

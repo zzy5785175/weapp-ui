@@ -1,0 +1,4 @@
+<button
+    hover-class="button-hover">
+    <slot></slot>
+    </button>

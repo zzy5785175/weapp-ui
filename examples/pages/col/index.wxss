@@ -1,0 +1,5 @@
+.demo-col {
+    height: 30px;
+    background: #d3dce6;
+    border-radius: 4px;
+}

@@ -1,0 +1,65 @@
+
+<demo-block title="基础布局">
+    <ui-row>
+        <block wx:for="{{3}}" wx:key="item">
+            <ui-col span="{{ 8 }}">
+                <view class="demo-col" style="{{index % 2 !== 0 ? 'background: #e5e9f2' : ''}}">
+                </view>
+            </ui-col>
+        </block>
+    </ui-row>
+</demo-block>
+<demo-block title="分栏间隔">
+    <ui-row gutter="{{ 10 }}">
+        <block wx:for="{{4}}" wx:key="item">
+            <ui-col span="{{ 6 }}">
+                <view class="demo-col" style="{{ index % 2 !== 0 ? 'background: #e5e9f2' : '' }}">
+                </view>
+            </ui-col>
+        </block>
+    </ui-row>
+</demo-block>
+
+<demo-block title="混合布局">
+    <ui-row gutter="{{ 10 }}">
+        <ui-col span="{{ 6 }}">
+            <view class="demo-col">
+            </view>
+        </ui-col>
+        <ui-col span="{{ 18 }}">
+            <view class="demo-col">
+            </view>
+        </ui-col>
+    </ui-row>
+</demo-block>
+
+<demo-block title="分栏偏移">
+    <ui-row gutter="{{ 10 }}">
+        <ui-col span="{{ 6 }}">
+            <view class="demo-col">
+            </view>
+        </ui-col>
+        <ui-col span="{{ 10 }}" offset="{{ 4 }}">
+            <view class="demo-col">
+            </view>
+        </ui-col>
+    </ui-row>
+</demo-block>
+
+<demo-block title="对齐方式">
+    <ui-row type="flex" justify="space-between">
+        <view class="demo-col" style="width: 40%; margin-bottom: 15px">
+        </view>
+        <view class="demo-col" style="width: 40%; margin-bottom: 15px">
+        </view>
+    </ui-row>
+
+    <ui-row type="flex" justify="space-around">
+        <view class="demo-col" style="width: 30%;">
+        </view>
+        <view class="demo-col" style="width: 30%;">
+        </view>
+        <view class="demo-col" style="width: 30%">
+        </view>
+    </ui-row>
+</demo-block>

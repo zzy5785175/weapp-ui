@@ -1,0 +1,19 @@
+{
+    "pages": [
+        "pages/button/index",
+        "pages/icons/index",
+        "pages/loading/index",
+        "pages/col/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#f8f8f8",
+        "navigationBarTitleText": "Weapp UI",
+        "navigationBarTextStyle": "black",
+        "backgroundTextStyle": "dark",
+        "backgroundColor": "#f8f8f8"
+    },
+    "usingComponents": {
+        "demo-block": "./components/demo-block/index"
+    },
+    "debug": true
+}
