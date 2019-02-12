@@ -1,7 +1,7 @@
 <button
     id="{{ id }}"
     lang="{{ lang }}"
-    class="ui-button {{ type ? 'ui-button--' + type : '' }} {{ loading ? 'is-loading' : '' }} {{ round ? 'is-round' : '' }} {{ disabled ? 'is-disabled' : '' }} custom-class"
+    class="ui-button {{ inline ? 'ui-button--inline'  : '' }} {{ type ? 'ui-button--' + type : '' }} {{ size ? 'ui-button--' + size : '' }} {{ loading ? 'is-loading' : '' }} {{ round ? 'is-round' : '' }} {{ disabled ? 'is-disabled' : '' }} custom-class"
     open-type="{{ openType }}"
     app-parameter="{{ appParameter }}"
     hover-stop-propagation="{{ hoverStopPropagation }}"
@@ -12,10 +12,10 @@
     send-message-path="{{ sendMessagePath }}"
     send-message-img="{{ sendMessageImg }}"
     show-message-card="{{ showMessageCard }}"
+    bindtap="handleTap"
     bindcontact="bindcontact"
     bindgetuserinfo="bindgetuserinfo"
-    bindgetphonenumber="bindgetphonenumber"
-    bindtap="handleTap">
+    bindgetphonenumber="bindgetphonenumber">
         <ui-icon wx:if="{{ loading }}" class-name="ui-icon-loading" custom-class="ui-button-loading" />
         <slot></slot>
 </button> 

@@ -8,7 +8,7 @@ $--color-black: #282828 !default;
 $--color-text-placeholder: #c0c4cc !default;
 
 $--border-color-base: #dcdfe6 !default;
-
+$--border-radius-base: 4px !default;
 $--button-active-shade-percent: 10% !default;
 
 $--button-font-size: 14px !default;
@@ -34,3 +34,18 @@ $--button-warning-border: $--color-warning !default;
 $--button-danger-color: $--color-white !default;
 $--button-danger-fill: $--color-danger !default;
 $--button-danger-border: $--color-danger !default;
+
+$--button-medium-height: 36px !default;
+$--button-medium-padding-horizontal: 20px !default;
+$--button-medium-font-size: 14px !default;
+$--button-medium-border-radius: $--border-radius-base !default;
+
+$--button-small-height: 32px !default;
+$--button-small-padding-horizontal: 15px !default;
+$--button-small-font-size: 12px !default;
+$--button-small-border-radius: 3px !default;
+
+$--button-mini-height: 28px !default;
+$--button-mini-padding-horizontal: 15px !default;
+$--button-mini-font-size: 10px !default;
+$--button-mini-border-radius: 2px !default;

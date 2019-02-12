@@ -13,7 +13,9 @@
         "backgroundColor": "#f8f8f8"
     },
     "usingComponents": {
-        "demo-block": "./components/demo-block/index"
+        "demo-block": "./components/demo-block/index",
+        "ui-row": "./dist/row/index",
+        "ui-col": "./dist/col/index"
     },
     "debug": true
 }

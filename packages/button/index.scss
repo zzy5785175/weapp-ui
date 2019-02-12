@@ -5,6 +5,7 @@
     box-sizing: border-box;
     height: 40px;
     line-height: 40px;
+    vertical-align: middle;
     padding: 0 $--button-padding-horizontal;
     font-size: $--button-font-size;
     border-radius: $--button-border-radius;
@@ -30,6 +31,15 @@
     }
     &--warning {
         @include button-variant($--button-warning-color, $--button-warning-fill, $--button-warning-border);
+    }
+    &--medium {
+        @include button-size($--button-medium-height, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius)
+    }
+    &--small {
+        @include button-size($--button-small-height, $--button-small-padding-horizontal, $--button-small-font-size, $--button-small-border-radius)
+    }
+    &--mini {
+        @include button-size($--button-mini-height, $--button-mini-padding-horizontal, $--button-mini-font-size, $--button-mini-border-radius)
     }
     &.is-round {
         border-radius: 20px;

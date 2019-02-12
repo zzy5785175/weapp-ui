@@ -37,6 +37,19 @@ Component({
         showMessageCard: Boolean
     },
     methods: {
-
+        handleTap() {
+            const { loading, disabled } = this.data;
+            if (loading || disabled) return false;
+            this.triggerEvent('click');
+        },
+        bindcontact({ detail = {} } = {}) {
+            this.triggerEvent('contact', detail);
+        },
+        bindgetuserinfo({ detail = {} } = {}) {
+            this.triggerEvent('getuserinfo', detail);
+        },
+        bindgetphonenumber({ detail = {} } = {}) {
+            this.triggerEvent('getphonenumber', detail);
+        }
     }
 });

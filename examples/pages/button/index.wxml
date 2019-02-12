@@ -1,21 +1,35 @@
 <demo-block title="基础用法">
-    <ui-button custom-class="btn">默认按钮</ui-button>
-    <ui-button custom-class="btn" type="success">成功按钮</ui-button>
-    <ui-button custom-class="btn" type="info">信息按钮</ui-button>
-    <ui-button custom-class="btn" type="warning">警告按钮</ui-button>
-    <ui-button custom-class="btn" type="danger">危险</ui-button>
-    <ui-button custom-class="btn" type="success" loading="{{true}}">加载中</ui-button>
+    <ui-row gutter="{{10}}">
+        <ui-col span="{{24}}">
+            <view class="inline-wrapper">
+                <ui-button bind:click="handleClick" custom-class="btn" inline>行内按钮</ui-button>
+                <ui-button bind:click="handleClick" custom-class="btn" type="success" inline>行内按钮</ui-button>
+            </view>
+        </ui-col>
+        <ui-button bind:click="handleClick" custom-class="btn">默认按钮</ui-button>
+        <ui-button custom-class="btn" type="success">成功按钮</ui-button>
+        <ui-button custom-class="btn" type="info">信息按钮</ui-button>
+        <ui-button custom-class="btn" type="warning">警告按钮</ui-button>
+        <ui-button custom-class="btn" type="danger">危险按钮</ui-button>
+    </ui-row>
 </demo-block>
 
 <demo-block title="圆角按钮">
-    <ui-button custom-class="btn" round>默认按钮</ui-button>
-    <ui-button custom-class="btn" type="success" round>成功按钮</ui-button>
+    <ui-button custom-class="btn" round>圆角按钮</ui-button>
+    <ui-button type="success" round>圆角按钮</ui-button>
 </demo-block>
 
 <demo-block title="禁用按钮">
-    <ui-button custom-class="btn" disabled>默认按钮</ui-button>
-    <ui-button custom-class="btn" type="success" disabled>成功按钮</ui-button>
-    <ui-button custom-class="btn" type="info" disabled>信息按钮</ui-button>
-    <ui-button custom-class="btn" type="warning" disabled>警告按钮</ui-button>
-    <ui-button type="danger" disabled>危险</ui-button>
+    <ui-button type="success" disabled>成功按钮</ui-button>
+</demo-block>
+
+<demo-block title="加载中">
+    <ui-button type="success" loading="{{true}}">加载中</ui-button>
+</demo-block>
+
+<demo-block title="不同尺寸">
+    <ui-button custom-class="btn">默认按钮</ui-button>
+    <ui-button size="medium" custom-class="btn">中等按钮</ui-button>
+    <ui-button size="small" custom-class="btn">小型按钮</ui-button>
+    <ui-button size="mini" custom-class="btn">超小按钮</ui-button>
 </demo-block>
