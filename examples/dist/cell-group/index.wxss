@@ -1,0 +1,1 @@
+.ui-cell-group{position:relative}.ui-cell-group--border::after{content:'';position:absolute;top:0;left:0;width:200%;height:200%;-webkit-transform:scale(.5);transform:scale(.5);-webkit-transform-origin:0 0;transform-origin:0 0;pointer-events:none;-webkit-box-sizing:border-box;box-sizing:border-box;border:0 solid #dcdfe6;border-width:1px 0}

@@ -1,7 +1,8 @@
 {
     "pages": [
-        "pages/button/index",
+        "pages/cell/index",
         "pages/icons/index",
+        "pages/button/index",
         "pages/loading/index",
         "pages/col/index"
     ],
@@ -15,7 +16,8 @@
     "usingComponents": {
         "demo-block": "./components/demo-block/index",
         "ui-row": "./dist/row/index",
-        "ui-col": "./dist/col/index"
+        "ui-col": "./dist/col/index",
+        "ui-icon": "./dist/icons/index"
     },
     "debug": true
 }

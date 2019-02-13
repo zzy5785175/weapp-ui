@@ -1,7 +1,8 @@
 Component({
     externalClasses: [],
     properties: {
-        title: String
+        title: String,
+        bodyStyle: String
     },
     methods: {
 

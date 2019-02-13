@@ -1,0 +1,27 @@
+@mixin hairline($border-color) {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    border: 0 solid $border-color;
+}
+
+@mixin hairline-bottom($border-color, $left) {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: $left;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(.5);
+    transform-origin: left bottom;
+    pointer-events: none;
+    box-sizing: border-box;
+    border-bottom: 1px solid $border-color;
+}

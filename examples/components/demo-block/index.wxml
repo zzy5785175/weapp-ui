@@ -1,6 +1,6 @@
 <view class="demo-block">
     <view class="demo-block__title" wx:if="{{ title }}">{{ title }}</view>
-    <view class="demo-block__content">
+    <view class="demo-block__content" style="{{ bodyStyle }}">
         <slot />
     </view>
 </view>

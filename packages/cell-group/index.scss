@@ -1,0 +1,9 @@
+@import '../theme-chalk/common/_var.scss';
+@import '../theme-chalk/common/_mixin.scss';
+.ui-cell-group {
+    position: relative;
+    &--border::after {
+       @include hairline($--border-color-base);
+       border-width: 1px 0;
+    }
+}

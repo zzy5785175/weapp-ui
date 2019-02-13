@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "ui-cell": "../../dist/cell",
+        "ui-cell-group": "../../dist/cell-group"
+    }
+}

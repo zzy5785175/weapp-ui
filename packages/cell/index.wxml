@@ -1,0 +1,22 @@
+<view
+    class="ui-cell {{ border ? 'ui-cell--border' : '' }} {{ clickable ? 'ui-cell--clickable' : '' }}"
+    hover-class="ui-cell--hover hover-class"
+    hover-stay-time="70">
+    <view class="ui-cell__left-icon">
+        <slot name="left-icon"></slot>
+    </view>
+    <view class="ui-cell__title">
+        <block wx:if="{{ title }}">
+            {{ title }}
+            <view class="ui-cell__label" wx:if="{{ label }}">{{ label }}</view>
+        </block>
+        <slot wx:else name="title"></slot>
+    </view>
+    <view class="ui-cell__value">
+        <block wx:if="{{ value }}">{{ value }}</block>
+        <slot wx:else name="value"></slot>
+    </view>
+    <view class="ui-cell__right-icon">
+        <slot name="right-icon"></slot>
+    </view>
+</view>
