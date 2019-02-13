@@ -8,14 +8,19 @@ Component({
         title: null,
         label: null,
         clickable: Boolean,
+        isLink: Boolean,
+        linkType: String,
+        url: String,
         border: {
             type: Boolean,
             value: true
         }
     },
     methods: {
-        handleTap() {
-            this.triggerEvent('click');
+        handleClick(e) {
+            this.triggerEvent('click', e);
+            if (!this.data.isLink || !this.data.url) return;
+            wx[this.data.linkType]({ url: this.data.url });
         }
     }
 });

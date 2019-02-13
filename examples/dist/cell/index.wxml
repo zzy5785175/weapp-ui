@@ -1,7 +1,8 @@
 <view
-    class="ui-cell {{ border ? 'ui-cell--border' : '' }} {{ clickable ? 'ui-cell--clickable' : '' }}"
+    class="ui-cell {{ border ? 'ui-cell--border' : '' }} {{ clickable || isLink ? 'ui-cell--clickable' : '' }}"
     hover-class="ui-cell--hover hover-class"
-    hover-stay-time="70">
+    hover-stay-time="70"
+    bind:tap="handleClick">
     <view class="ui-cell__left-icon">
         <slot name="left-icon"></slot>
     </view>

@@ -1,18 +1,21 @@
 <demo-block title="基本用法" bodyStyle="padding: 0">
     <ui-cell-group>
-        <ui-cell title="标题" value="内容"></ui-cell>
+        <ui-cell title="标题" value="内容" bind:click="handleClick"></ui-cell>
         <ui-cell title="标题" label="内容描述" value="内容" border="{{false}}"></ui-cell>
     </ui-cell-group>
 </demo-block>
 
 <demo-block title="展示图标" bodyStyle="padding: 0">
-    <ui-cell title="标题" value="内容" border="{{false}}">
+    <ui-cell title="标题" value="内容">
         <ui-icon class-name="ui-icon-location" slot="left-icon"/>
+    </ui-cell>
+    <ui-cell title="标题" value="内容"  border="{{false}}">
+        <ui-icon class-name="ui-icon-right" slot="right-icon"/>
     </ui-cell>
 </demo-block>
 
-<demo-block title="展示图标" bodyStyle="padding: 0">
-    <ui-cell title="标题" value="内容" border="{{false}}">
+<demo-block title="页面跳转" bodyStyle="padding: 0">
+    <ui-cell title="标题" value="内容" is-link link-type="navigateTo" url="../../pages/button/index" border="{{false}}">
         <ui-icon class-name="ui-icon-right" slot="right-icon"/>
     </ui-cell>
 </demo-block>
