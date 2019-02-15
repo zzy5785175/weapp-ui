@@ -1,5 +1,4 @@
 {
     "usingComponents": {
-        "ui-button": "../../dist/button"
     }
 }

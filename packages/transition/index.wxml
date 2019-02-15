@@ -1,0 +1,7 @@
+<view
+    wx:if="{{ inited }}"
+    class="ui-transition custom-class"
+    style="-webkit-animation: {{ name }}-{{ type }} {{ duration }}ms both; animation: {{ name }}-{{ type }} {{ duration }}ms both; {{ display ? '' : 'display: none;' }}{{ customStyle }}"
+    bind:animationend="animationEnd">
+    <slot />
+</view>
