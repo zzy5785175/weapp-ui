@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/popup/index",
         "pages/cell/index",
         "pages/icons/index",
         "pages/button/index",

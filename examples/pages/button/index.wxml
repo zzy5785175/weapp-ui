@@ -33,5 +33,3 @@
     <ui-button size="small" custom-class="btn">小型按钮</ui-button>
     <ui-button size="mini" custom-class="btn">超小按钮</ui-button>
 </demo-block>
-
-<ui-overlay visible="{{ visible }}" />

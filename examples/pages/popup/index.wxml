@@ -1,0 +1,4 @@
+<demo-block>
+    <ui-button bind:click="handleClick">底部弹出</ui-button>
+    <ui-overlay visible="{{visible}}"></ui-overlay>
+</demo-block>
