@@ -1,10 +1,22 @@
 Page({
     data: {
-        visible: false
+        visible: false,
+        topVisible: false,
+        rightVisible: false,
+        bottomVisible: false,
+        leftVisible: false,
+        target: null
     },
-    handleClick() {
+    handleClick(e) {
+        const { target } = e.target.dataset;
         this.setData({
-            visible: true
-        })
+            [target]: true,
+            target
+        });
+    },
+    onClose(e) {
+        this.setData({
+            [this.data.target]: false
+        });
     }
 })

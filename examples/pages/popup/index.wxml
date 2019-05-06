@@ -1,4 +1,49 @@
 <demo-block>
-    <ui-button bind:click="handleClick">底部弹出</ui-button>
-    <ui-overlay visible="{{visible}}"></ui-overlay>
+    <ui-button data-target="visible" bind:click="handleClick">中间弹出</ui-button>
+    <ui-button custom-class="btn" data-target="topVisible" bind:click="handleClick">顶部弹出</ui-button>
+    <ui-button custom-class="btn" data-target="rightVisible" bind:click="handleClick">右部弹出</ui-button>
+    <ui-button custom-class="btn" data-target="bottomVisible" bind:click="handleClick">底部弹出</ui-button>
+    <ui-button custom-class="btn" data-target="leftVisible" bind:click="handleClick">左部弹出</ui-button>
+    <ui-popup
+        visible="{{visible}}"
+        bind:close="onClose">
+        <view class="content">
+            center
+        </view>
+    </ui-popup>
+    <ui-popup
+        custom-style="height: 50%"
+        visible="{{topVisible}}"
+        position="top"
+        bind:close="onClose">
+        <view class="top-content">
+            top
+        </view>
+    </ui-popup>
+    <ui-popup
+        visible="{{rightVisible}}"
+        position="right"
+        bind:close="onClose">
+        <view class="right-content">
+            right
+        </view>
+    </ui-popup>
+    <ui-popup
+        custom-style="height: 50%"
+        visible="{{bottomVisible}}"
+        position="bottom"
+        bind:close="onClose">
+        <view class="bottom-content">
+            bottom
+        </view>
+    </ui-popup>
+    <ui-popup
+        custom-style="height: 100%"
+        visible="{{leftVisible}}"
+        position="left"
+        bind:close="onClose">
+        <view class="left-content">
+            left
+        </view>
+    </ui-popup>
 </demo-block>

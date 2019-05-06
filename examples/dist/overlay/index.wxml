@@ -1,7 +1,7 @@
 <ui-transition
     visible="{{ visible }}"
     custom-class="ui-overlay"
-    custom-style="z-index: {{ zIndex }}; {{ mask ? 'background: rgba(0, 0, 0, .5)' : '' }}"
+    custom-style="z-index: {{ zIndex }}; {{ mask ? 'background: rgba(0, 0, 0, .7)' : '' }}"
     bind:tap="handleClick"
     catch:touchmove="noop"
 />

@@ -1,3 +1,12 @@
-<view class="ui-popup">
-        
+<ui-overlay
+    wx:if="{{inited && overlay}}"
+    visible="{{visible}}"
+    bind:click="onClickOverlay"
+/>
+
+<view
+    class="ui-popup ui-popup--{{position}} custom-class"
+    wx:if="{{inited}}"
+    style="z-index: {{zIndex}}; -webkit-animation: ui-{{position}}-{{type}} {{duration}}ms both;animation: ui-{{position}}-{{type}} {{duration}}ms both; {{display ? '' : 'display: none;'}}{{customStyle}}">
+    <slot/>
 </view>

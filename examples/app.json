@@ -1,26 +1,28 @@
 {
-    "pages": [
-        "pages/popup/index",
-        "pages/cell/index",
-        "pages/icons/index",
-        "pages/button/index",
-        "pages/loading/index",
-        "pages/col/index"
-    ],
-    "window": {
-        "navigationBarBackgroundColor": "#f8f8f8",
-        "navigationBarTitleText": "Weapp UI",
-        "navigationBarTextStyle": "black",
-        "backgroundTextStyle": "dark",
-        "backgroundColor": "#f8f8f8"
-    },
-    "usingComponents": {
-        "demo-block": "./components/demo-block/index",
-        "ui-button": "./dist/button/index",
-        "ui-overlay": "./dist/overlay/index",
-        "ui-row": "./dist/row/index",
-        "ui-col": "./dist/col/index",
-        "ui-icon": "./dist/icons/index"
-    },
-    "debug": true
+  "pages": [
+    "pages/popup/index",
+    "pages/cell/index",
+    "pages/icons/index",
+    "pages/button/index",
+    "pages/loading/index",
+    "pages/col/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "Weapp UI",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f8f8f8"
+  },
+  "usingComponents": {
+    "demo-block": "./components/demo-block/index",
+    "ui-button": "./dist/button/index",
+    "ui-overlay": "./dist/overlay/index",
+    "ui-row": "./dist/row/index",
+    "ui-col": "./dist/col/index",
+    "ui-icon": "./dist/icons/index",
+    "ui-popup": "./dist/popup/index"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

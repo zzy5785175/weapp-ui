@@ -1,1 +1,139 @@
 @import '../theme-chalk/common/_var.scss';
+
+.ui-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    animation: ease-out both;
+    &--center {
+        transform: translate3d(-50%, -50%, 0);
+    }
+    &--top {
+        width: 100%;
+        top: 0;
+        right: auto;
+        bottom: auto;
+    }
+    &--right {
+        right: 0;
+        top: 50%;
+        left: auto;
+        bottom: auto;
+        height: 100%;
+    }
+    &--bottom {
+        width: 100%;
+        bottom: 0;
+        top: auto;
+        right: auto;
+    }
+    &--left {
+        left: 0;
+        top: 50%;
+        bottom: auto;
+        right: auto;
+    }
+}
+
+@keyframes ui-center-enter {
+    from {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) scale(0.7);
+    }
+}
+
+@keyframes ui-center-leave {
+    to {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) scale(0.7);
+    }
+}
+
+@keyframes ui-scale-enter {
+    from {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) scale(0.7);
+    }
+}
+
+@keyframes ui-scale-leave {
+    to {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) scale(0.7);
+    }
+}
+
+@keyframes ui-bottom-enter {
+    from {
+        transform: translate3d(-50%, 100%, 0);
+    }
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@keyframes ui-bottom-leave {
+    from {
+        transform: translate3d(-50%, 0, 0);
+    }
+    to {
+        transform: translate3d(-50%, 100%, 0);
+    }
+}
+  
+@keyframes ui-top-enter {
+    from {
+        transform: translate3d(-50%, -100%, 0);
+    }
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@keyframes ui-top-leave {
+    from {
+        transform: translate3d(-50%, 0, 0);
+    }
+    to {
+        transform: translate3d(-50%, -100%, 0);
+    }
+}
+
+@keyframes ui-left-enter {
+    from {
+        transform: translate3d(-100%, -50%, 0);
+    }
+    to {
+        transform: translate3d(0, -50%, 0);
+    }
+}
+
+@keyframes ui-left-leave {
+    from {
+        transform: translate3d(0, -50%, 0);
+    }
+    to {
+        transform: translate3d(-100%, -50%, 0);
+    }
+}
+  
+@keyframes ui-right-enter {
+    from {
+        transform: translate3d(100%, -50%, 0);
+    }
+    to {
+        transform: translate3d(0, -50%, 0);
+    }
+}
+
+@keyframes ui-right-leave {
+    from {
+        transform: translate3d(0, -50%, 0);
+    }
+    to {
+        transform: translate3d(100%, -50%, 0);
+    }
+}
