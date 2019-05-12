@@ -7,6 +7,6 @@
 <view
     class="ui-popup ui-popup--{{position}} custom-class"
     wx:if="{{inited}}"
-    style="z-index: {{zIndex}}; -webkit-animation: ui-{{position}}-{{type}} {{duration}}ms both;animation: ui-{{position}}-{{type}} {{duration}}ms both; {{display ? '' : 'display: none;'}}{{customStyle}}">
+    style="z-index: {{zIndex}}; -webkit-animation: ui-{{position}}-{{type}} {{duration}}ms ease both;animation: ui-{{position}}-{{type}} {{duration}}ms ease both; {{display ? '' : 'display: none;'}}{{customStyle}}">
     <slot/>
 </view>
