@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 4,
 			"list": [
 				{
 					"id": 0,
@@ -54,6 +54,26 @@
 					"name": "button",
 					"pathName": "pages/button/index",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "collapse",
+					"pathName": "pages/collapse/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cell",
+					"pathName": "pages/cell/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "popup",
+					"pathName": "pages/popup/index",
 					"scene": null
 				}
 			]

@@ -51,3 +51,7 @@ $--button-mini-font-size: 10px !default;
 $--button-mini-border-radius: 2px !default;
 
 $--cell-active-color: mix($--color-black, $--color-white, 10%) !default;
+
+$--collapse-padding-size: 10px 15px !default;
+$--collapse-border: 1rpx solid $--border-color-base !default;
+$--collapse-font-size: 14px!default;

@@ -1,0 +1,3 @@
+<view class="ui-collapse">
+    <slot />
+</view>

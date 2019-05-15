@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/collapse/index",
     "pages/popup/index",
     "pages/cell/index",
     "pages/icons/index",
@@ -21,7 +22,9 @@
     "ui-row": "./dist/row/index",
     "ui-col": "./dist/col/index",
     "ui-icon": "./dist/icons/index",
-    "ui-popup": "./dist/popup/index"
+    "ui-popup": "./dist/popup/index",
+    "ui-collapse": "./dist/collapse/index",
+    "ui-collapse-item": "./dist/collapse-item/index"
   },
   "debug": true,
   "sitemapLocation": "sitemap.json"

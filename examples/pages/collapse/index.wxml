@@ -1,0 +1,10 @@
+<demo-block bodyStyle="padding: 0">
+    <ui-collapse value="{{value}}" bind:change="onChange" accordion>
+        <ui-collapse-item title="一致性 Consistency" name="1" body-class="collapse-body">
+            <view style="height: 400rpx"></view>
+        </ui-collapse-item>
+        <ui-collapse-item title="效率 Efficiency" name="2" body-class="collapse-body">
+            <view style="height: 600rpx"></view>
+        </ui-collapse-item>
+    </ui-collapse>
+</demo-block>

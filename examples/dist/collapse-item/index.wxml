@@ -1,0 +1,17 @@
+<view class="ui-collapse-item">
+    <view class="ui-collapse-item__header {{ !isexpand ? 'clear-border' : '' }}" bind:tap="handleTap">
+        <view class="ui-collapse-item__title">{{ title }}</view>
+        <view class="ui-collapse-item__arrow {{ isexpand ? 'is-active' : '' }}">
+            <ui-icon class-name="ui-icon-right" />
+        </view>
+    </view>
+    <view
+        class="ui-collapse-item__wrapper body-class"
+        style="height: {{ bodyHeight }};"
+        animation="{{ animationData }}"
+        bind:transitionend="onTransitionEnd">
+        <view class="ui-collapse-item__body">
+            <slot />
+        </view>
+    </view>
+</view>
