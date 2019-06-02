@@ -37,11 +37,13 @@ Component({
             });
         },
         onChage(name, expand) {
-            console.log('expand: ', expand);
-            let { accordion } = this.data;
+            let { accordion, value } = this.data;
             let emitValue;
             if (accordion) {
                 emitValue = expand ? name : '';
+            }
+            else {
+                emitValue = expand ? value.concat(name) : value.filter(item => item !== name);
             }
             this.triggerEvent('change', { value: emitValue });
         }

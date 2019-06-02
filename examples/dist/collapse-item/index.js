@@ -31,6 +31,9 @@ Component({
             if (accordion) {
                 update = value === name;
             }
+            else {
+                update = value.some(item => item === name);
+            }
             if (update !== isexpand) {
                 this._updateStyle(update);
             }
